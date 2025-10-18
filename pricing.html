@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Calculator | TechSolve Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <h2>TechSolve Pro</h2>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Pricing Calculator</h1>
+                <p>Get an instant estimate for your IT solution needs</p>
+            </div>
+        </section>
+
+        <!-- Pricing Calculator -->
+        <section class="section">
+            <div class="container">
+                <div class="pricing-calculator">
+                    <div class="calculator-form">
+                        <h3>Customize Your Solution</h3>
+                        
+                        <div class="form-group">
+                            <label>Select Service:</label>
+                            <select id="service-type" class="calculator-select">
+                                <option value="cybersecurity">Cybersecurity</option>
+                                <option value="cloud">Cloud Solutions</option>
+                                <option value="consulting">IT Consulting</option>
+                                <option value="network">Network Management</option>
+                                <option value="software">Software Development</option>
+                                <option value="support">IT Support</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Company Size:</label>
+                            <select id="company-size" class="calculator-select">
+                                <option value="startup">Startup (1-10 employees)</option>
+                                <option value="small">Small Business (11-50 employees)</option>
+                                <option value="medium">Medium Business (51-200 employees)</option>
+                                <option value="large">Large Enterprise (201+ employees)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Service Level:</label>
+                            <select id="service-level" class="calculator-select">
+                                <option value="basic">Basic</option>
+                                <option value="professional">Professional</option>
+                                <option value="enterprise">Enterprise</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Duration (months):</label>
+                            <input type="range" id="duration" min="1" max="24" value="12" class="calculator-slider">
+                            <span id="duration-value">12 months</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Additional Features:</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="features" value="24/7-support"> 24/7 Support
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="features" value="training"> Staff Training
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="features" value="reporting"> Advanced Reporting
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="features" value="integration"> System Integration
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calculator-result">
+                        <h3>Your Estimate</h3>
+                        <div class="price-breakdown">
+                            <div class="price-item">
+                                <span>Base Service</span>
+                                <span id="base-price">$0</span>
+                            </div>
+                            <div class="price-item">
+                                <span>Additional Features</span>
+                                <span id="features-price">$0</span>
+                            </div>
+                            <div class="price-item total">
+                                <strong>Monthly Total</strong>
+                                <strong id="monthly-total">$0</strong>
+                            </div>
+                            <div class="price-item">
+                                <span>Annual Total</span>
+                                <span id="annual-total">$0</span>
+                            </div>
+                        </div>
+                        <div class="calculator-actions">
+                            <button class="cta-button primary" onclick="saveEstimate()">Save Estimate</button>
+                            <button class="cta-button secondary" onclick="contactSales()">Contact Sales</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechSolve Pro</h3>
+                    <p>Your trusted partner for IT consulting and digital transformation solutions.</p>
+                    <div class="footer-contact">
+                        <p>
+                            <a href="mailto:cliffmaina585@gmail.com" class="email-link">
+                                📧 cliffmaina585@gmail.com
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://wa.me/254112777599" target="_blank" class="whatsapp-link">
+                                💬 WhatsApp: +254 112 777 599
+                            </a>
+                        </p>
+                        <p>
+                            <a href="tel:+254112777599" class="phone-link">
+                                📞 +254 112 777 599-TECH
+                            </a>
+                        </p>
+                        <p>📍 Thika, Thika West District</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>IT Services</h4>
+                    <a href="services.html#cybersecurity">Cyber Security</a>
+                    <a href="services.html#cloud">Cloud Solutions</a>
+                    <a href="services.html#consulting">IT Consulting</a>
+                    <a href="services.html#network">Network Management</a>
+                    <a href="services.html#software">Software Development</a>
+                    <a href="services.html#support">IT Support</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <span>💼</span> LinkedIn
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>🐦</span> Twitter
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>📘</span> Facebook
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>📷</span> Instagram
+                        </a>
+                    </div>
+                    <div class="newsletter">
+                        <p>Stay updated with IT insights</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechSolve Pro. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Cookie Policy</a></p>
+                <div class="footer-badges">
+                    <span class="badge">🔒 SSL Secured</span>
+                    <span class="badge">⭐ Trusted Partner</span>
+                    <span class="badge">🏆 Award Winning</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- For testing (development only) -->
+    <script src="test-suite.js"></script>
+
+    <!-- Enhanced features -->
+    <script src="live-chat-integration.js"></script>
+    <script src="script.js"></script>
+    <script src="pricing-calculator.js"></script>
+    <script src="ai-recommender.js"></script>
+    <script src="status-dashboard.js"></script>
+    <script src="client-portal.js"></script>
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS with your Public Key
+        emailjs.init('89giRdd2GzU0cKJ19');
+    </script>
+    
+    <script src="script.js"></script>
+    <!-- Other scripts... -->
+
+</body>
+</html>

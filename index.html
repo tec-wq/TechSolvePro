@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolve Pro | IT Consulting Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <h2>TechSolve Pro</h2>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Transform Your Business with Expert IT Solutions</h1>
+                <p>Professional IT consulting services to drive your digital transformation and business growth</p>
+                <div class="hero-buttons">
+                    <a href="services.html" class="cta-button primary">Our Services</a>
+                    <a href="contact.html" class="cta-button secondary">Get Consultation</a>
+                </div>
+            </div>
+        </section>   
+
+                <!-- AI Service Recommender -->
+        <section class="section ai-recommender">
+            <div class="container">
+                <div class="ai-header">
+                    <h2>Find Your Perfect IT Solution</h2>
+                    <p>Take our 2-minute AI assessment to get personalized service recommendations</p>
+                    <button onclick="recommender.startAssessment()" class="cta-button primary">
+                        Start AI Assessment 🚀
+                    </button>
+                </div>
+                <div id="ai-assessment" class="ai-assessment-container">
+                    <!-- AI questions and results will appear here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Preview Section -->
+        <section id="services-preview" class="section services">
+            <div class="container">
+                <h2 class="section-title">Our IT Services</h2>
+                <div class="services-grid">
+                    <a href="services.html#cybersecurity" class="service-card">
+                        <div class="service-icon">🔒</div>
+                        <h3>Cyber Security</h3>
+                        <p>Protect your business from cyber threats with our comprehensive security solutions and monitoring.</p>
+                    </a>
+                    <a href="services.html#cloud" class="service-card">
+                        <div class="service-icon">☁️</div>
+                        <h3>Cloud Solutions</h3>
+                        <p>Migrate to cloud infrastructure with our expert guidance and implementation services.</p>
+                    </a>
+                    <a href="services.html#consulting" class="service-card">
+                        <div class="service-icon">📊</div>
+                        <h3>IT Consulting</h3>
+                        <p>Strategic IT planning and consulting to align technology with your business objectives.</p>
+                    </a>
+                </div>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="services.html" class="cta-button primary">View All Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Contact Section -->
+            <section class="section quick-contact">
+                <div class="container">
+                    <h2 class="section-title">Get in Touch Today</h2>
+                    <p>Choose your preferred way to contact us</p>
+        
+                    <div class="contact-methods">
+                        <a href="https://wa.me/254112777599" 
+                            target="_blank" 
+                            class="contact-method whatsapp">
+                            <div class="method-icon">💬</div>
+                            <h3>WhatsApp</h3>
+                            <p>Instant messaging for quick questions</p>
+                            <span class="method-action">Message Now →</span>
+                        </a>
+            
+                        <a href="mailto:cliffmaina585@gmail.com" 
+                            class="contact-method email">
+                            <div class="method-icon">📧</div>
+                            <h3>Email</h3>
+                            <p>Detailed inquiries and proposals</p>
+                            <span class="method-action">Send Email →</span>
+                        </a>
+            
+                        <a href="contact.html" class="contact-method form">
+                            <div class="method-icon">📋</div>
+                            <h3>Contact Form</h3>
+                            <p>Structured inquiry with all details</p>
+                            <span class="method-action">Fill Form →</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        
+        <!-- About Preview Section -->
+        <section id="about-preview" class="section about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">Why Choose TechSolve Pro?</h2>
+                        <p>With over 10 years of experience in IT consulting, we help businesses leverage technology to achieve their goals. Our team of certified professionals delivers cutting-edge solutions tailored to your unique needs.</p>
+                        <div class="features-list">
+                            <div class="feature">
+                                <span class="feature-icon">✅</span>
+                                <span>Certified IT Professionals</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">✅</span>
+                                <span>24/7 Support Available</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">✅</span>
+                                <span>Customized Solutions</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">✅</span>
+                                <span>Proven Track Record</span>
+                            </div>
+                        </div>
+                        <div style="margin-top: 2rem;">
+                            <a href="about.html" class="cta-button primary">Learn More About Us</a>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>150+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>24/7</h3>
+                            <p>Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "TechSolve Pro transformed our IT infrastructure. Their team is professional and highly skilled."
+                        </div>
+                        <div class="client-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>CEO, TechInnovate Inc.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Outstanding cloud migration services. They made the process seamless and efficient."
+                        </div>
+                        <div class="client-info">
+                            <h4>Michael Chen</h4>
+                            <p>CTO, Global Solutions</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "The cybersecurity implementation exceeded our expectations. Highly recommended!"
+                        </div>
+                        <div class="client-info">
+                            <h4>Emily Rodriguez</h4>
+                            <p>IT Director, SecureCorp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!-- Case Studies Section -->
+        <section id="case-studies" class="section services">
+            <div class="container">
+                <h2 class="section-title">Success Stories</h2>
+                <div class="case-studies-grid">
+                    <div class="case-study-card">
+                        <div class="case-study-image" style="background: linear-gradient(45deg, #667eea, #764ba2);">
+                            <span>Finance</span>
+                        </div>
+                        <div class="case-study-content">
+                            <h3>SecureBank Cybersecurity Overhaul</h3>
+                            <p>Implemented comprehensive security framework reducing threats by 95%</p>
+                            <div class="case-study-stats">
+                                <div class="stat">
+                                    <strong>95%</strong>
+                                    <span>Threat Reduction</span>
+                                </div>
+                                <div class="stat">
+                                    <strong>24/7</strong>
+                                    <span>Monitoring</span>
+                                </div>
+                            </div>
+                            <a href="#" class="read-more">Read Case Study →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-card">
+                        <div class="case-study-image" style="background: linear-gradient(45deg, #f093fb, #f5576c);">
+                            <span>Retail</span>
+                        </div>
+                        <div class="case-study-content">
+                            <h3>Global Retail Cloud Migration</h3>
+                            <p>Seamless transition to cloud infrastructure improving scalability</p>
+                            <div class="case-study-stats">
+                                <div class="stat">
+                                    <strong>60%</strong>
+                                    <span>Cost Savings</span>
+                                </div>
+                                <div class="stat">
+                                    <strong>3x</strong>
+                                    <span>Performance</span>
+                                </div>
+                            </div>
+                            <a href="#" class="read-more">Read Case Study →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-card">
+                        <div class="case-study-image" style="background: linear-gradient(45deg, #4facfe, #00f2fe);">
+                            <span>Healthcare</span>
+                        </div>
+                        <div class="case-study-content">
+                            <h3>MedTech Software Development</h3>
+                            <p>Custom patient management system serving 50+ clinics</p>
+                            <div class="case-study-stats">
+                                <div class="stat">
+                                    <strong>50+</strong>
+                                    <span>Clinics Served</span>
+                                </div>
+                                <div class="stat">
+                                    <strong>99.9%</strong>
+                                    <span>Uptime</span>
+                                </div>
+                            </div>
+                            <a href="#" class="read-more">Read Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+                <!-- Client Portal -->
+        <section class="section client-portal-section">
+            <div class="container">
+                <div class="portal-header-main">
+                    <h2>Client Portal</h2>
+                    <p>Manage your projects, access support, and track progress in real-time</p>
+                </div>
+                <div id="client-portal" class="client-portal-container">
+                    <!-- Portal content will be loaded by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+            <!-- System Status Dashboard -->
+        <section class="section status-dashboard">
+            <div class="container">
+                <div class="status-header">
+                    <h2>System Status</h2>
+                    <div class="status-controls">
+                        <div id="overall-status" class="status-badge operational">
+                            All Systems Operational
+                        </div>
+                        <button id="refresh-status" class="refresh-btn">
+                            <span class="refresh-icon">🔄</span>
+                            Refresh
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="status-grid">
+                    <div class="status-column">
+                        <h3>Service Status</h3>
+                        <div id="system-status-grid" class="system-status-grid">
+                            <!-- Status items will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="status-column">
+                        <h3>Recent Incidents</h3>
+                        <div id="recent-incidents" class="recent-incidents">
+                            <!-- Incidents will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="uptime-stats">
+                    <div class="uptime-item">
+                        <span class="uptime-label">Current Uptime</span>
+                        <span class="uptime-counter" data-start="${Date.now()}">Loading...</span>
+                    </div>
+                    <div class="uptime-item">
+                        <span class="uptime-label">Last Incident</span>
+                        <span class="uptime-value">30 days ago</span>
+                    </div>
+                    <div class="uptime-item">
+                        <span class="uptime-label">Reliability</span>
+                        <span class="uptime-value">99.98%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechSolve Pro</h3>
+                    <p>Your trusted partner for IT consulting and digital transformation solutions.</p>
+                    <div class="footer-contact">
+                        <p>
+                            <a href="mailto:cliffmaina585@gmail.com" class="email-link">
+                                📧 cliffmaina585@gmail.com
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://wa.me/254112777599" target="_blank" class="whatsapp-link">
+                                💬 WhatsApp: +254 112 777 599
+                            </a>
+                        </p>
+                        <p>
+                            <a href="tel:+254112777599" class="phone-link">
+                                📞 +254 112 777 599-TECH
+                            </a>
+                        </p>
+                        <p>📍 Thika, Thika West District</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>IT Services</h4>
+                    <a href="services.html#cybersecurity">Cyber Security</a>
+                    <a href="services.html#cloud">Cloud Solutions</a>
+                    <a href="services.html#consulting">IT Consulting</a>
+                    <a href="services.html#network">Network Management</a>
+                    <a href="services.html#software">Software Development</a>
+                    <a href="services.html#support">IT Support</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <span>💼</span> LinkedIn
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>🐦</span> Twitter
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>📘</span> Facebook
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>📷</span> Instagram
+                        </a>
+                    </div>
+                    <div class="newsletter">
+                        <p>Stay updated with IT insights</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechSolve Pro. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Cookie Policy</a></p>
+                <div class="footer-badges">
+                    <span class="badge">🔒 SSL Secured</span>
+                    <span class="badge">⭐ Trusted Partner</span>
+                    <span class="badge">🏆 Award Winning</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/254112777599" 
+       class="whatsapp-float" 
+       target="_blank"
+       aria-label="Chat on WhatsApp">
+       💬 WhatsApp
+    </a>
+
+    <!-- Live Chat Widget -->
+    <div id="chat-widget" class="chat-widget">
+        <div class="chat-header">
+            <h4>TechSolve Support</h4>
+            <span class="chat-status online">● Online</span>
+            <button id="close-chat" class="close-chat">×</button>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+            <div class="message bot-message">
+                <p>Hello! I'm your TechSolve assistant. How can I help you today?</p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chat-input" placeholder="Type your message...">
+            <button id="send-message">Send</button>
+        </div>
+    </div>
+    <button id="chat-toggle" class="chat-toggle">
+        💬 Chat
+    </button>
+    <!-- Add this only during development -->
+     <!-- For testing (development only) -->
+    <script src="test-suite.js"></script>
+
+    <!-- Enhanced features -->
+    <script src="live-chat-integration.js"></script>
+
+    <script src="script.js"></script>
+    <script src="ai-recommender.js"></script>
+    <script src="status-dashboard.js"></script>
+    <script src="client-portal.js"></script>
+
+        <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS with your Public Key
+        emailjs.init('89giRdd2GzU0cKJ19');
+    </script>
+    
+    <script src="script.js"></script>
+    <!-- Other scripts... -->
+</body>
+
+</body>
+</html>

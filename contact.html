@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | TechSolve Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <h2>TechSolve Pro</h2>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch with our team for expert IT consultation</p>
+            </div>
+        </section>
+
+                <!-- Contact & Scheduling Section -->
+        <section class="section contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                
+                <div class="contact-scheduling-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-section">
+                        <h3>Send us a Message</h3>
+                        <div id="form-message" class="form-message"></div>
+                        
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <select id="service" name="service" required>
+                                    <option value="">Select Service Interested In</option>
+                                    <option value="cybersecurity">Cyber Security</option>
+                                    <option value="cloud">Cloud Solutions</option>
+                                    <option value="consulting">IT Consulting</option>
+                                    <option value="network">Network Management</option>
+                                    <option value="software">Software Development</option>
+                                    <option value="support">IT Support</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select id="urgency" name="urgency">
+                                    <option value="">How urgent is your request?</option>
+                                    <option value="low">Low - General inquiry</option>
+                                    <option value="medium">Medium - Planning phase</option>
+                                    <option value="high">High - Need immediate assistance</option>
+                                    <option value="critical">Critical - System down/emergency</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Tell us about your project requirements, challenges, or questions..." rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Calendly Scheduler -->
+                    <div class="scheduling-section">
+                        <div class="scheduling-header">
+                            <h3>📅 Schedule a Free Consultation</h3>
+                            <p>Book a 30-minute call with our IT experts</p>
+                            <div class="schedule-benefits">
+                                <div class="benefit">
+                                    <span>✅</span> No commitment required
+                                </div>
+                                <div class="benefit">
+                                    <span>✅</span> Get expert advice
+                                </div>
+                                <div class="benefit">
+                                    <span>✅</span> Custom solution assessment
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Calendly Inline Widget -->
+                        <div class="calendly-container">
+                            <div class="calendly-inline-widget" 
+                                 data-url="https://calendly.com/cliffmaina585/30min" 
+                                 style="min-width:320px;height:700px;">
+                            </div>
+                            <div class="contact-item">
+                                <strong>WhatsApp:</strong> 
+                                <a href="https://wa.me/254112777599" target="_blank" class="whatsapp-link">
+                                    +254 112 777 599
+                                </a>
+                            </div>
+                            <div class="contact-item">
+                                <strong>Email:</strong> 
+                                <a href="mailto:cliffmaina585@gmail.com" class="email-link">
+                                    cliffmaina585@gmail.com
+                                </a>
+                            </div>
+                            <script type="text/javascript" 
+                                    src="https://assets.calendly.com/assets/external/widget.js" 
+                                    async>
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section services">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>What is your response time?</h3>
+                        <p>We typically respond to all inquiries within 2 business hours. Emergency requests receive immediate attention 24/7.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Do you offer free consultations?</h3>
+                        <p>Yes! We offer free initial consultations to understand your needs and provide tailored recommendations.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>What industries do you serve?</h3>
+                        <p>We serve businesses across various industries including healthcare, finance, retail, manufacturing, and technology.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Do you provide ongoing support?</h3>
+                        <p>Yes, we offer comprehensive support packages including 24/7 monitoring, maintenance, and emergency support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="contact-info">
+    <h3>Contact Information</h3>
+    
+    <div class="contact-item">
+        <strong>📧 Email:</strong> 
+        <a href="mailto:cliffmaina585@gmail.com?subject=Website%20Inquiry%20-%20TechSolve%20Pro&body=Hi%20TechSolve%20Pro%20team,%0A%0AI%20would%20like%20to%20inquire%20about%20your%20services." 
+           class="email-link">
+           cliffmaina585@gmail.com
+        </a>
+    </div>
+    
+    <div class="contact-item">
+        <strong>💬 WhatsApp:</strong> 
+        <a href="https://wa.me/254112777599text=Hi%20TechSolve%20Pro!%20I%20found%20you%20online%20and%20would%20like%20to%20discuss%20IT%20services." 
+           target="_blank" 
+           class="whatsapp-link">
+           +254 112 777 599
+        </a>
+    </div>
+    
+    <div class="contact-item">
+        <strong>📞 Phone:</strong> 
+        <a href="tel:+254112777599" class="phone-link">
+            +254 112 777 599-TECH
+        </a>
+    </div>
+    
+    <div class="contact-item">
+        <strong>📍 Address:</strong> Thika, Thika West District
+    </div>
+    
+    <div class="contact-item">
+        <strong>🕒 Hours:</strong> Mon-Fri 9:00 AM - 6:00 PM
+    </div>
+    
+    <div class="contact-actions">
+        <a href="https://wa.me/254112777599" 
+           target="_blank" 
+           class="cta-button whatsapp-btn">
+           💬 Message on WhatsApp
+        </a>
+        
+        <a href="mailto:cliffmaina585@gmail.com" 
+           class="cta-button secondary email-btn">
+           📧 Send Email
+        </a>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechSolve Pro</h3>
+                    <p>Your trusted partner for IT consulting and digital transformation solutions.</p>
+                    <div class="footer-contact">
+                        <p>
+                            <a href="mailto:cliffmaina585@gmail.com" class="email-link">
+                                📧 cliffmaina585@gmail.com
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://wa.me/254112777599" target="_blank" class="whatsapp-link">
+                                💬 WhatsApp: +254 112 777 599
+                            </a>
+                        </p>
+                        <p>
+                            <a href="tel:+254112777599" class="phone-link">
+                                📞 +254 112 777 599-TECH
+                            </a>
+                        </p>
+                        <p>📍 Thika, Thika West District</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>IT Services</h4>
+                    <a href="services.html#cybersecurity">Cyber Security</a>
+                    <a href="services.html#cloud">Cloud Solutions</a>
+                    <a href="services.html#consulting">IT Consulting</a>
+                    <a href="services.html#network">Network Management</a>
+                    <a href="services.html#software">Software Development</a>
+                    <a href="services.html#support">IT Support</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <span>💼</span> LinkedIn
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>🐦</span> Twitter
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>📘</span> Facebook
+                        </a>
+                        <a href="#" class="social-link">
+                            <span>📷</span> Instagram
+                        </a>
+                    </div>
+                    <div class="newsletter">
+                        <p>Stay updated with IT insights</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechSolve Pro. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Cookie Policy</a></p>
+                <div class="footer-badges">
+                    <span class="badge">🔒 SSL Secured</span>
+                    <span class="badge">⭐ Trusted Partner</span>
+                    <span class="badge">🏆 Award Winning</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- For testing (development only) -->
+<script src="test-suite.js"></script>
+
+<!-- Enhanced features -->
+<script src="live-chat-integration.js"></script>
+    <script src="script.js"></script>
+    <script src="ai-recommender.js"></script>
+    <script src="status-dashboard.js"></script>
+    <script src="client-portal.js"></script>
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS with your Public Key
+        emailjs.init('89giRdd2GzU0cKJ19');
+    </script>
+    
+    <script src="script.js"></script>
+    <!-- Other scripts... -->
+
+</body>
+</html>
